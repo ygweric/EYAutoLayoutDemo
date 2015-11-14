@@ -1,15 +1,14 @@
 //
-//  FirstViewController.h
+//  autolayout.pch
 //  EYAutoLayoutDemo
 //
 //  Created by ericyang on 11/14/15.
 //  Copyright © 2015 Eric Yang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef autolayout_pch
+#define autolayout_pch
 
-@interface FirstViewController : UIViewController
+#import "PubHeader.h"
 
-
-@end
-
+#endif /* autolayout_pch */

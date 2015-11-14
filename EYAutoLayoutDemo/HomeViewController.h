@@ -1,15 +1,13 @@
 //
-//  SecondViewController.h
+//  HomeViewController.h
 //  EYAutoLayoutDemo
 //
 //  Created by ericyang on 11/14/15.
 //  Copyright © 2015 Eric Yang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SecondViewController : UIViewController
-
+@interface HomeViewController : BaseViewController
 
 @end
-

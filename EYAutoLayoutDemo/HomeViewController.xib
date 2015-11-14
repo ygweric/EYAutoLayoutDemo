@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="tbItems" destination="sfI-TN-gvw" id="fzY-iZ-jNl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sfI-TN-gvw">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xCq-Z3-j8I"/>
+                        <outlet property="delegate" destination="-1" id="XUS-GH-Bu1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sfI-TN-gvw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A48-XL-seB"/>
+                <constraint firstItem="sfI-TN-gvw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JvN-G4-wUo"/>
+                <constraint firstAttribute="trailingMargin" secondItem="sfI-TN-gvw" secondAttribute="trailing" id="TTJ-fE-eYL"/>
+                <constraint firstAttribute="bottomMargin" secondItem="sfI-TN-gvw" secondAttribute="bottom" id="dZD-eX-gZR"/>
+                <constraint firstItem="sfI-TN-gvw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="gRx-Ym-Pcs"/>
+                <constraint firstAttribute="trailing" secondItem="sfI-TN-gvw" secondAttribute="trailing" id="hYC-Dk-jDM"/>
+                <constraint firstAttribute="bottom" secondItem="sfI-TN-gvw" secondAttribute="bottom" id="wuP-FN-MEa"/>
+                <constraint firstItem="sfI-TN-gvw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="zks-xE-ZCl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="TTJ-fE-eYL"/>
+                    <exclude reference="dZD-eX-gZR"/>
+                    <exclude reference="gRx-Ym-Pcs"/>
+                    <exclude reference="zks-xE-ZCl"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		5F979FE91BF70A49003BDA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F979FE81BF70A49003BDA2C /* main.m */; };
 		5F979FEC1BF70A49003BDA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F979FEB1BF70A49003BDA2C /* AppDelegate.m */; };
-		5F979FEF1BF70A49003BDA2C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F979FEE1BF70A49003BDA2C /* FirstViewController.m */; };
-		5F979FF21BF70A49003BDA2C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F979FF11BF70A49003BDA2C /* SecondViewController.m */; };
 		5F979FF51BF70A49003BDA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F979FF31BF70A49003BDA2C /* Main.storyboard */; };
 		5F979FF71BF70A49003BDA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F979FF61BF70A49003BDA2C /* Assets.xcassets */; };
 		5F979FFA1BF70A49003BDA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F979FF81BF70A49003BDA2C /* LaunchScreen.storyboard */; };
 		5F97A0051BF70A49003BDA2C /* EYAutoLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F97A0041BF70A49003BDA2C /* EYAutoLayoutDemoTests.m */; };
 		5F97A0101BF70A49003BDA2C /* EYAutoLayoutDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F97A00F1BF70A49003BDA2C /* EYAutoLayoutDemoUITests.m */; };
+		5F97A01F1BF70D65003BDA2C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F97A01E1BF70D65003BDA2C /* BaseViewController.m */; };
+		5F97A0231BF70DA8003BDA2C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F97A0211BF70DA8003BDA2C /* HomeViewController.m */; };
+		5F97A0241BF70DA8003BDA2C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F97A0221BF70DA8003BDA2C /* HomeViewController.xib */; };
+		5F97A0281BF715AD003BDA2C /* HomeViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F97A0271BF715AD003BDA2C /* HomeViewControllerCell.xib */; };
+		5F97A02A1BF722AF003BDA2C /* HomeViewControllerHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F97A0291BF722AF003BDA2C /* HomeViewControllerHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,6 @@
 		5F979FE81BF70A49003BDA2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F979FEA1BF70A49003BDA2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F979FEB1BF70A49003BDA2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5F979FED1BF70A49003BDA2C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		5F979FEE1BF70A49003BDA2C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		5F979FF01BF70A49003BDA2C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		5F979FF11BF70A49003BDA2C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5F979FF41BF70A49003BDA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F979FF61BF70A49003BDA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F979FF91BF70A49003BDA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +53,15 @@
 		5F97A00B1BF70A49003BDA2C /* EYAutoLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EYAutoLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F97A00F1BF70A49003BDA2C /* EYAutoLayoutDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EYAutoLayoutDemoUITests.m; sourceTree = "<group>"; };
 		5F97A0111BF70A49003BDA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F97A01D1BF70D65003BDA2C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5F97A01E1BF70D65003BDA2C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5F97A0201BF70DA8003BDA2C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5F97A0211BF70DA8003BDA2C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5F97A0221BF70DA8003BDA2C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5F97A0251BF70F34003BDA2C /* PubHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PubHeader.h; sourceTree = "<group>"; };
+		5F97A0261BF7107E003BDA2C /* autolayout.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolayout.pch; sourceTree = "<group>"; };
+		5F97A0271BF715AD003BDA2C /* HomeViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewControllerCell.xib; sourceTree = "<group>"; };
+		5F97A0291BF722AF003BDA2C /* HomeViewControllerHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewControllerHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +114,15 @@
 			children = (
 				5F979FEA1BF70A49003BDA2C /* AppDelegate.h */,
 				5F979FEB1BF70A49003BDA2C /* AppDelegate.m */,
-				5F979FED1BF70A49003BDA2C /* FirstViewController.h */,
-				5F979FEE1BF70A49003BDA2C /* FirstViewController.m */,
-				5F979FF01BF70A49003BDA2C /* SecondViewController.h */,
-				5F979FF11BF70A49003BDA2C /* SecondViewController.m */,
+				5F97A0251BF70F34003BDA2C /* PubHeader.h */,
 				5F979FF31BF70A49003BDA2C /* Main.storyboard */,
+				5F97A01D1BF70D65003BDA2C /* BaseViewController.h */,
+				5F97A01E1BF70D65003BDA2C /* BaseViewController.m */,
+				5F97A0201BF70DA8003BDA2C /* HomeViewController.h */,
+				5F97A0211BF70DA8003BDA2C /* HomeViewController.m */,
+				5F97A0221BF70DA8003BDA2C /* HomeViewController.xib */,
+				5F97A0291BF722AF003BDA2C /* HomeViewControllerHeader.xib */,
+				5F97A0271BF715AD003BDA2C /* HomeViewControllerCell.xib */,
 				5F979FF61BF70A49003BDA2C /* Assets.xcassets */,
 				5F979FF81BF70A49003BDA2C /* LaunchScreen.storyboard */,
 				5F979FFB1BF70A49003BDA2C /* Info.plist */,
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5F979FE81BF70A49003BDA2C /* main.m */,
+				5F97A0261BF7107E003BDA2C /* autolayout.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,6 +264,9 @@
 				5F979FFA1BF70A49003BDA2C /* LaunchScreen.storyboard in Resources */,
 				5F979FF71BF70A49003BDA2C /* Assets.xcassets in Resources */,
 				5F979FF51BF70A49003BDA2C /* Main.storyboard in Resources */,
+				5F97A0281BF715AD003BDA2C /* HomeViewControllerCell.xib in Resources */,
+				5F97A02A1BF722AF003BDA2C /* HomeViewControllerHeader.xib in Resources */,
+				5F97A0241BF70DA8003BDA2C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F979FF21BF70A49003BDA2C /* SecondViewController.m in Sources */,
 				5F979FEC1BF70A49003BDA2C /* AppDelegate.m in Sources */,
-				5F979FEF1BF70A49003BDA2C /* FirstViewController.m in Sources */,
+				5F97A01F1BF70D65003BDA2C /* BaseViewController.m in Sources */,
 				5F979FE91BF70A49003BDA2C /* main.m in Sources */,
+				5F97A0231BF70DA8003BDA2C /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = EYAutoLayoutDemo/autolayout.pch;
 				INFOPLIST_FILE = EYAutoLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = EYAutoLayoutDemo/autolayout.pch;
 				INFOPLIST_FILE = EYAutoLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
