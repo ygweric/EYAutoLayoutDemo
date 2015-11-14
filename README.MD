@@ -1,3 +1,14 @@
+###EYAutoLayoutDemo
+
+
+----
+
+EYAutoLayoutDemo is a demo to show you how do use autolayout
+
+----
+
+
+
 
 ## Fist of all
 
@@ -294,6 +305,53 @@ when I'm calculator the height of the cell, the height of cell is 0, so constran
 
 ### some code
 
+change widht or height constrants fo special view
+
 ````
+
++(void)updateConstrantsView:(UIView*)view width:(float)width
+{
+    [self updateConstrantsView:view width:width height:0 priorityWidth:UILayoutPriorityRequired priorityHeight:UILayoutPriorityRequired];
+}
++(void)updateConstrantsView:(UIView*)view width:(float)width priority:(int)priority
+{
+    [self updateConstrantsView:view width:width height:0 priorityWidth:priority priorityHeight:UILayoutPriorityRequired];
+}
+
++(void)updateConstrantsView:(UIView*)view height:(float)height
+{
+    [self updateConstrantsView:view width:0 height:height priorityWidth:UILayoutPriorityRequired priorityHeight:UILayoutPriorityRequired];
+}
++(void)updateConstrantsView:(UIView*)view height:(float)height priority:(int)priority
+{
+    [self updateConstrantsView:view width:0 height:height priorityWidth:UILayoutPriorityRequired priorityHeight:priority];
+}
+
++(void)updateConstrantsView:(UIView*)view width:(float)width height:(float)height  priorityWidth:(int)priorityWidth priorityHeight:(int)priorityHeight
+{
+    NSDictionary* views=@{@"v":view};
+    NSDictionary* metrics=@{@"w":[NSNumber numberWithFloat:width],@"h":[NSNumber numberWithFloat:height],@"pw":@(priorityWidth),@"ph":@(priorityHeight)};
+    
+    NSArray *const affectingConstraints = [view.constraints filteredArrayUsingPredicate:
+                                           [NSPredicate predicateWithBlock:^BOOL(NSLayoutConstraint *constraint, NSDictionary *bindings)
+                                            {
+                                                BOOL isWidht=width>0?constraint.firstAttribute == NSLayoutAttributeWidth:NO;
+                                                BOOL isHeight=height>0?constraint.firstAttribute == NSLayoutAttributeHeight:NO;
+                                                
+                                                return constraint.firstItem
+                                                && (isWidht || isHeight)
+                                                && constraint.relation==NSLayoutRelationEqual
+                                                && constraint.secondItem==NULL
+                                                && constraint.secondAttribute==NSLayoutAttributeNotAnAttribute;
+                                            }]];
+    [view removeConstraints: affectingConstraints];
+    if (width>0) {
+        [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[v(w@pw)]" options:0 metrics:metrics views:views]];
+    }
+    if (height>0) {
+        [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[v(h@ph)]" options:0 metrics:metrics views:views]];
+    }
+}
+
 
 ````
